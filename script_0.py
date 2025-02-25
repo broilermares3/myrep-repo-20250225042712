@@ -29,11 +29,11 @@ def send_transaction(recipient, amount_eth):
     tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
     print(f' Transaction sent: {tx_hash.hex()}') # Исправлено: {...}
 
-# Simple Python script - Commit 0 - 2025-02-25 04:27:24
+# Simple Python script - Commit 0 - 2025-02-25 04:27:28
 print(f"Performing blockchain info check: w3.eth.is_connected()")
 print(f"Web3 is connected: {w3.is_connected}") # Исправлено: {...}
 print(f"Commit Number: 0")
-print(f"Random number: 5")
+print(f"Random number: 88")
 # Example: Send 0.01 ETH
 recipient_address = '0xRecipientAddressHere'
 send_transaction(recipient_address, 0.01)
